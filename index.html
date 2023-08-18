@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Capibarismo</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script>
+		function openApart(evt, ApartName) {
+		var i, tabcontent, tablinks;
+ 		tabcontent = document.getElementsByClassName("tabcontent");
+ 		for (i = 0; i < tabcontent.length; i++) {
+  		  	tabcontent[i].style.display = "none";
+ 		 }
+  		tablinks = document.getElementsByClassName("tablinks");
+ 		for (i = 0; i < tablinks.length; i++) {
+ 		  	tablinks[i].className = tablinks[i].className.replace(" active", "");
+ 		}
+  		document.getElementById(ApartName).style.display = "block";
+ 		 evt.currentTarget.className += " active";
+		}
+	</script>
+</head>
+<body>
+	<div class="tab">
+		<button class="tablinks" onclick="openApart(event, 'Fundamentos')" id="DefaultOpen">Fundamentos</button>
+  		<button class="tablinks" onclick="openApart(event, 'Mandamientos')">Mandamientos</button>
+  		<button class="tablinks" onclick="openApart(event, 'Miembros')">Miembros</button>
+  		<button class="tablinks" onclick="openApart(event, 'Bandera')">Bandera</button>
+	</div>
+	<div id="Fundamentos" class="tabcontent">
+		<h1>Fundamentos Capibaristas</h1>
+		<h3>El Capiabarismo es una religión</h3>
+		<script>
+			document.getElementById("DefaultOpen").click();
+		</script>
+	</div>
+	<div id="Mandamientos" class="tabcontent"> 
+		<h1>Los Ocho Mandamientos del Capibarismo:</h1>
+		<h3>
+			-Honrarás al capibara sobre todas las cosas<br>
+			-Se diga lo que se diga, el capibara es y será
+			el mejor y más honrado animal<br>
+			-Usarás siempre el nombre verdadero del capibara, 
+			no variantes como "carpincho"<br>
+			-Permanecerás hasta tus últimos días honrando
+			al capibara y no dudarás de su poder<br>
+			-No matarás ni dañarás física o psicologicamente
+			a ningún capibara<br>
+			-Nunca celebrarás el dia de la marmota, ya que
+			esta es la rival del capibara<br>
+			-No insultarás nada relacionado con el capibara:
+			Habitat, costumbres o propiedades biológicas<br>
+			-Enseñarás a otros las virtudes y beneficios de
+			la fé capibara<br>
+		</h3>
+	</div>
+	<div id="Miembros" class="tabcontent">
+	  <h1>Miembros</h1>
+	</div>
+	<div id="Bandera" class="tabcontent">
+		<h1>Nuestra Bandera</h1>
+		<img id="flag" src="images/flag.jpg">
+	</div>
+</body>
+</html>
