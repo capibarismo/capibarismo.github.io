@@ -22,7 +22,13 @@
 		}
 	</script>
 </head>
-<body>
+<body onclick="PlayAudio()">
+	<audio id="song" src="audio/song.mp3" loop></audio>
+	<script>
+		function PlayAudio(){
+			document.getElementById("song").play();
+		}
+	</script>
 	<div class="tab">
 		<button class="tablinks" onclick="openApart(event, 'Info General')" id="DefaultOpen">Información General</button>
   		<button class="tablinks" onclick="openApart(event, 'Mandamientos')">Mandamientos</button>

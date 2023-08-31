@@ -2,6 +2,8 @@
 		{
 			color: #9E7742;
 			font-family: math;
+			padding: 2%;
+			padding-top: 5%;
 		}
 
 		h3
@@ -77,11 +79,6 @@
 		}
 		body {
 		    min-height: 100%;
-		}
-
-		#info_title{
-			padding: 2%;
-			padding-top: 5%;
 		}
 
 		#jesus-with-capybara{
