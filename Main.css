@@ -85,3 +85,29 @@
 			border: 5px solid #9E7742;
 			border-radius: 10px;
 		}
+		
+		div#audiocontroller{
+			position: relative;
+			top: 23em;
+			padding: 10px;
+		}
+
+		input#slider{
+			-webkit-appearance: none;
+			border: 4px #6e532e;
+			border-radius: 10px;
+			border-style: solid;
+			outline: none;
+			overflow: hidden;
+		}
+
+		input#slider::-webkit-slider-thumb {
+		    -webkit-appearance: none;
+			background: #9E7742;
+			width: 15px;
+			height: 15px;
+			border: 6px solid #9e7742;
+			border-radius: 50%;
+			cursor: pointer;
+			box-shadow: -407px 0 0 400px #c09456;
+		}
