@@ -23,17 +23,29 @@
 	</script>
 </head>
 <body onclick="PlayAudio()">
-	<audio id="song" src="audio/song.mp3" loop></audio>
-	<script>
-		function PlayAudio(){
-			document.getElementById("song").play();
-		}
-	</script>
 	<div class="tab">
 		<button class="tablinks" onclick="openApart(event, 'Info General')" id="DefaultOpen">Información General</button>
   		<button class="tablinks" onclick="openApart(event, 'Mandamientos')">Mandamientos</button>
   		<button class="tablinks" onclick="openApart(event, 'Miembros')">Miembros</button>
   		<button class="tablinks" onclick="openApart(event, 'Galeria')">Galería</button>
+		<div id="audiocontroller">
+			<audio id="song" src="audio/song.mp3" loop ></audio>
+			<input type="range" min="0" max="1" step="0.01" id="slider" value="0">
+			<script>
+				var reproductor = document.getElementById("song");
+				reproductor.volume = 0;
+
+				var slider = document.getElementById("slider");
+				
+				slider.addEventListener("change", function(ev){
+					reproductor.volume = ev.currentTarget.value;
+				},true);
+
+				function PlayAudio(){
+					reproductor.play();
+				}
+			</script>
+		</div>
 	</div>
 	<div id="Info General" class="tabcontent">
 		<h1 id="info_title">Bienvenido al Capibarismo!</h1>
