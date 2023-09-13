@@ -88,7 +88,7 @@
 		
 		div#audiocontroller{
 			position: relative;
-			top: 23em;
+			top: 47%;
 			padding: 10px;
 		}
 
@@ -110,4 +110,25 @@
 			border-radius: 50%;
 			cursor: pointer;
 			box-shadow: -407px 0 0 400px #c09456;
+		}
+
+		.container {
+			width: 920px;
+			height: 280px;
+
+			position: relative;
+		}
+
+		.capybara {
+			width: 84px;
+			height: 84px;
+			
+			position:absolute;
+			left: 42px;
+			bottom: 22px;
+			z-index: 2;
+
+			background: url(images/game/capybara.png);
+			background-size: 100%;
+			background-position-x: 0px;
 		}
