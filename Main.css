@@ -11,6 +11,11 @@
 			color: #9E7742;
 			font-family: Century Gothic, fantasy;
 		}
+		
+		p
+		{
+			color: #FFFFFF	
+		}
 
 		* {
 			margin: 0;
